@@ -1,0 +1,11 @@
+name: GoodAntiXray
+version: 1.3
+author: Envel
+api-version: 1.17
+
+main: org.opencommunity.envel.goodantixray.Main
+
+commands:
+   GoodAntiXray:
+     description: Main commands of plugin.
+     aliases: [gax, goodax]
