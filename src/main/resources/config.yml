@@ -1,22 +1,19 @@
-#   ____                       _   __  __    ____
-#  / ___|   ___     ___     __| | |  \/  |  / ___|
-# | |  _   / _ \   / _ \   / _` | | |\/| | | |
-# | |_| | | (_) | | (_) | | (_| | | |  | | | |___
-#  \____|  \___/   \___/   \__,_| |_|  |_|  \____|
-#   ____                       _      _              _     _  __  __
-#  / ___|   ___     ___     __| |    / \     _ __   | |_  (_) \ \/ /  _ __    __ _   _   _
-# | |  _   / _ \   / _ \   / _` |   / _ \   | '_ \  | __| | |  \  /  | '__|  / _` | | | | |
-# | |_| | | (_) | | (_) | | (_| |  / ___ \  | | | | | |_  | |  /  \  | |    | (_| | | |_| |
-#  \____|  \___/   \___/   \__,_| /_/   \_\ |_| |_|  \__| |_| /_/\_\ |_|     \__,_|  \__, |
-#                                                                                    |___/
-# Plugin works with a "Xray Level". 
+#  #####                              #                       #     #
+# #     #   ####    ####   #####     # #    #    #  #####  #   #   #   #####     ##    #   #
+# #        #    #  #    #  #    #   #   #   ##   #    #    #    # #    #    #   #  #    # #
+# #  ####  #    #  #    #  #    #  #     #  # #  #    #    #     #     #    #  #    #    #
+# #     #  #    #  #    #  #    #  #######  #  # #    #    #    # #    #####   ######    #
+# #     #  #    #  #    #  #    #  #     #  #   ##    #    #   #   #   #   #   #    #    #
+#  #####    ####    ####   #####   #     #  #    #    #    #  #     #  #    #  #    #    #
+#
+# Plugin works with a "Xray Level".
 # The more a player is suspected of using Xray, the more their Xray level value will increase.
-# The defaults values in the default configuration have been tested on Minecraft Vanilla 1.13-1.15.
+# The defaults values in the default configuration have been tested on Minecraft Vanilla 1.13-1.17.
 #
 # Have a nice game!
 Sanction:
  850:
-  notify: true
+  notify: true # For moderators with permission gax.alerts
   commands:
    - 'm %player% (ಠ_ಠ) Cheating will lead to blocking! 1/2'
  1000:
@@ -31,11 +28,11 @@ Sanction:
    - 'broadcast %player% was kicked for сheating!'
 
 Prefix:
- primaryColor: '&b&l'
- secondaryColor: '&f'
+ primaryColor: '&b'
+ secondaryColor: '&b&l'
 
 Messages:
- notify: '&b&l%player%&f&b is suspected of using Xray.'
+ notify: '&b&l%player%&f&b is suspected of using Xray.' # Notify text for moderators with permission gax.alerts
  check: '&bThe Xray level of &b&l%player%&f&b = %XrayLvl%.'
  playerNotFound: '&bUnable to find this player O_o'
  pluginReloaded: '&bSuccessfully reloaded!'
